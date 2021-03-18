@@ -1,7 +1,15 @@
 import { render } from 'react-dom';
+import { Counter } from './components/Counter';
+import { RepositoryList } from './components/RepositoryList';
+import './styles/global.scss'
 
 function App() {
-    return <h1>Olá World</h1>
+    return (
+        <>
+            <RepositoryList />
+            <Counter />
+        </>
+    )
 }
 
 render(<App />, document.getElementById('root'));
