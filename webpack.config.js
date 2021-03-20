@@ -36,9 +36,6 @@ module.exports = {
                   options: {
                       plugins: [
                           isDevelopment && require.resolve('react-refresh/babel'),
-                          new HtmlWebpackPlugin({
-                              template: path.resolve(__dirname, 'public', 'index.html')
-                          })
                       ].filter(Boolean)
                   }
               }
